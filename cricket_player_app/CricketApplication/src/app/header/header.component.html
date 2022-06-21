@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-xxl">
+      
+        
+        <div class="navbar-brand align-item-center d-flex ps-3 px-2 ">
+            <a class="nav-link"><i  class="fab fa-cuttlefish" style="font-size: 30px;color: #fff; ">Cricket Player App</i></a>
+        </div>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div *ngIf="isLoggedIn()">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ml-auto" >
+                <a class="nav-link" routerLink="/dashboard"> <i style="font-size: 30px;color: #fff; " class="fa fa-home "></i></a>
+               
+                <a class="nav-link" routerLink="/player-detail"> <i style="font-size: 30px;color: #fff; " class="fa fa-book "></i></a>
+                <a class="nav-link" routerLink="/players-list"> <i style="font-size: 30px;color: #fff; " class="fa fa-heart ps-1 "> </i> </a>
+                    <a class="nav-link" routerLink="/dashboard"> <i style="font-size: 30px;color: #fff; " class="fa fa-sign-out" (click)="logout()"></i></a>
+             
+                </div>
+        </div>
+        </div>
+        <div *ngIf="!isLoggedIn()">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ml-auto" >
+
+
+                    <a class="nav-link" routerLink="/dashboard"> <i style="font-size: 30px;color: #fff; " class="fa fa-home "></i></a>
+                 <a class="nav-link" routerLink="/sign-up"> <i style="font-size: 30px;color: #fff; " class="fa fa-user-plus" ></i></a>
+                 <a class="nav-link" routerLink="/log-in"> <i style="font-size: 30px;color: #fff; " class="fa fa-sign-in" ></i></a>
+            </div>
+            </div>
+            
+        </div>
+        </div>
+
+</nav>

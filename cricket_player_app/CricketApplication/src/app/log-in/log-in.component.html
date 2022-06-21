@@ -1,0 +1,115 @@
+<!-- Section: Design Block -->
+<div id="background_design">
+    <section class="text-center text-lg-start">
+        <!-- style="background-color: rgb(89,140,8);"-->
+        <style>
+            .cascading-right {
+                margin-right: -50px;
+            }
+            
+            @media (max-width: 991.98px) {
+                .cascading-right {
+                    margin-right: 0;
+                }
+            }
+        </style>
+
+        <!-- Jumbotron -->
+        <div class="container py-4">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-12 mb-8 mb-lg-3">
+                    <div class="card cascading-right" style="
+                background: hsla(0, 0%, 100%, 0.55);
+                backdrop-filter: blur(30px);
+                ">
+                        <div class="card-body p-5 shadow-5 text-center">
+                            <h2 class="fw-bold mb-5" style="font-size: 40px; font-weight: bold">Log In Now</h2>
+
+                            <form [formGroup]="myform" (ngSubmit)="checkUser()">
+
+                                <!-- Email input -->
+
+                                <div style="margin-left: 15%;">
+                                    <div class="form-group row">
+                                        <label for="username" class="col-sm-3 col-form-label" style="font-size: 16px;font-weight: bold;">Name</label>
+                                        <div class="col-sm-6 ml-2 ">
+                                            <input type="text" class="form-control" id="Name" placeholder="Username" name="Name" formControlName="Username">
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                    <br />
+
+
+                                    <!-- Password input -->
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label" style="font-size: 16px;font-weight: bold;">Password</label>
+                                        <div class="col-sm-6">
+                                            <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="Password" formControlName="Password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+
+                                <!-- Submit button -->
+                                <button class="btn btn-secondary btn-block mb-4" style="font-size: 18px;">
+                   Log In
+                  </button>
+                  <div class="test-center" >
+                    
+                    <div *ngIf="errMsg" class="text-danger">
+                        Wrong User Credentials
+                        </div>
+                  </div>
+
+                                <!-- Register buttons -->
+                                <div class="text-center">
+                                    <p style="font-size: 13px;">New User : <button class="btn btn-socndary " (click)="movePage('sign-up')">Sign Up</button></p>
+                              
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+              
+          <footer class="site-footer">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-12 col-md-6">
+                          <h6>About</h6>
+                          <p class="text-justify">Cricket is a bat-and-ball game played between two teams of eleven players each on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. The game proceeds
+                              when a player on the fielding team, called the bowler, "bowls" (propels) the ball from one end of the pitch towards the wicket at the other end, with an "over" being completed once they have legally done so six times. </p>
+                      </div>
+          
+                      <div class="col-xs-6 col-md-3">
+                          <h6>Categories</h6>
+                          <ul class="footer-links">
+                              <li>Search Players</li>
+                              <li>Wishlist</li>
+                              <li>Terms&Conditions</li>
+                              <li>Contact Us</li>
+                              <li></li>
+                              <li></li>
+                          </ul>
+                      </div>
+          
+                      <div class="col-xs-6 col-md-3">
+                          <h6>Quick Links</h6>
+                          <ul class="footer-links">
+                              <li>About Us</li>
+                              <li>Contact Us</li>
+                              <li>Contribute</li>
+                              <li>Privacy Policy</li>
+                              <li>Sitemap</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <hr>
+              </div>
+              
+          </footer>
+        </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,40 @@
+
+<div class="container-xxl pt-3">
+    <div class="box">
+        <div *ngFor=" let play of players ">
+            <div class="content1">
+                <div align="center">
+                    <img src="{{play.imageUrl}}" class="img1" alt="d">
+                </div>
+                <div class="px-2 py-2 sz">
+                    <h4 align="center">{{play.name}}
+                    </h4>
+                    <h5 align="center">{{play.country}}</h5>
+                    <h6 align="center">{{play.placeOfBirth}}</h6>
+
+                    <table align="center">
+
+                        <tr>
+                            <td>BATTING STYLE</td>
+                            <td>: {{play.battingStyle}}</td>
+                        </tr>
+
+                        <tr>
+                            <td>BOWLING STYLE</td>
+                            <td>: {{play.bowlingStyle}}</td>
+                        </tr>
+                        
+
+                    </table>
+
+                    <div align="center " class="star ">
+                        
+                            <button (click)="removeItem(play)" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

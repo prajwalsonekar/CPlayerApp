@@ -1,0 +1,91 @@
+.container-xxl {
+    background: transparent;
+}
+
+.selector {
+    height: 650 px;
+    color: #fff;
+    background-size: 100%;
+    background-image: url("https://videohive.img.customer.envatousercontent.com/files/282684694/1920.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=f37dacb0d0bee4ad6d87b280b10b80e0");
+    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* background-image: url("https://wallpaperaccess.com/full/3819073.jpg"); */
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.2rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    position: relative;
+}
+
+.box>* {
+    flex: 22%;
+    padding-bottom: 25px;
+    margin: 0.2rem;
+    background: transparent;
+    border-radius: 12px;
+}
+
+.content1 {
+    padding-bottom: 0px;
+    padding-top: 0.2rem;
+    width: fit-content;
+    margin: 0.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: #130f0ce7;
+    border-radius: 12px;
+}
+
+.img1 {
+    width: 10.6rem;
+    height: 9.6rem;
+    text-align: center;
+    margin: 10px;
+    display: block;
+    border-radius: 12px;
+}
+
+.sz {
+    font-size: 13px;
+    font-weight: 647;
+    color: #c5d3f0;
+}
+
+.star {
+    padding: 5px;
+    font-size: 25px;
+}
+
+span {
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+
+li {
+    padding-top: 5px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.checked-heart {
+    color: red;
+}
+
+.my-card {
+    width: min-content;
+}
+
+.btn {
+    text-align: center;
+}

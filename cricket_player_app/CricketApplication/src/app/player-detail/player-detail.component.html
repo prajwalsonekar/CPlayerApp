@@ -1,0 +1,123 @@
+
+<div class="container-xl pt-3" >
+
+    <div align="center">
+    <div class="pt-5 mt-3">
+        
+        <form [formGroup]="searchform" (ngSubmit)=fetchPlayer()>
+            <table>
+                <tr>
+                    <td>
+                        <input name="searchTerm" formControlName="searchTerm" class="s-bar" type="text" placeholder="Search Player">
+                    </td>
+                    <td>
+                        <button>
+                            <i class="fa fa-search search-icon"></i>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+   
+    </div>
+</div>
+   
+    <div *ngIf="playerInfo != undefined">
+        <div class="box1">
+        
+                <div class="content1">
+                    <div align="center">
+                        <img src="{{playerInfo.imageUrl}}" class="img2" alt="d">
+                    </div>
+                    <div class="px-2 py-2 sz">
+                        <h4 align="center">{{playerInfo.name}}
+                        </h4>
+
+                        <table align="center">
+                          
+                            <tr>
+                                <td>COUNTRY</td>
+                                <td>: {{playerInfo.country}}</td>
+                            </tr>
+                            <tr>
+                                <td>BATTING STYLE</td>
+                                <td>: {{playerInfo.battingStyle}}</td>
+                            </tr>
+                            <tr>
+                                <td>BOWLING STYLE</td>
+                                <td>: {{playerInfo.bowlingStyle}}</td>
+                            </tr>
+                            <tr>
+                                <td>PLACE OF BIRTH</td>
+                                <td>: {{playerInfo.placeOfBirth}}</td>
+                            </tr>
+                            <tr>
+                                <td>TEST RUNS</td>
+                                <td>
+                                    <div *ngFor=" let iter of playerInfo.stats ">
+                                        <div *ngIf="iter.statType=='batting' && iter.matchType=='test' && iter.statName=='runs' ">
+                                            : {{iter.value}}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>TEST INNINGS</td>
+                                <td>
+                                    <div *ngFor=" let iter of playerInfo.stats ">
+                                        <div *ngIf="iter.statType=='batting' && iter.matchType=='test' && iter.statName=='inn' ">
+                                            : {{iter.value}}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>TEST HIGHEST</td>
+                                <td>
+                                    <div *ngFor=" let iter of playerInfo.stats ">
+                                        <div *ngIf=" iter.matchType=='test' && iter.statName=='hs' ">
+                                            : {{iter.value}}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ODI RUNS</td>
+                                <td>
+                                    <div *ngFor=" let iter of playerInfo.stats ">
+                                        <div *ngIf="iter.statType=='batting' && iter.matchType=='odi' && iter.statName=='runs' ">
+                                            : {{iter.value}}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ODI INNINGS</td>
+                                <td>
+                                    <div *ngFor=" let iter of playerInfo.stats ">
+                                        <div *ngIf="iter.statType=='batting' && iter.matchType=='odi' && iter.statName=='inn' ">
+                                            : {{iter.value}}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ODI HIGHEST</td>
+                                <td>
+                                    <div *ngFor=" let iter of playerInfo.stats ">
+                                        <div *ngIf=" iter.matchType=='odi' && iter.statName=='hs' ">
+                                            : {{iter.value}}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <div align="center " class="star ">
+                            <a class="btn btn-primary" (click)="addTofavourite(playerInfo)">add to favourite</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

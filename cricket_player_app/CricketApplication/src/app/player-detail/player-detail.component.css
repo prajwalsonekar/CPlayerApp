@@ -1,0 +1,120 @@
+.container-xxl {
+    background: transparent;
+}
+
+.selector1 {
+    height: 650 px;
+    color: #fff;
+    background-size: 100%;
+    background-image: linear-gradient(rgba(221, 241, 150, 0.164), rgba(29, 68, 37, 0.925)), url("https://resources.pulse.icc-cricket.com/ICC/photo/2018/04/26/cb5f1795-8451-457d-bb07-b0fe17a4d46e/ICC-Cricket-World-Cup.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.s-bar {
+    border-radius: 15px;
+    margin: 5px 0px 5px 50px;
+    border: 8px solid rgba(35 88 20 / 99%)!important;
+    padding: 6px 10px 6px 19px;
+    width: 100%;
+}
+
+.s-bar:focus {
+    outline: none;
+}
+
+.search-icon {
+    color: #0d6efd;
+    background: transparent;
+}
+
+.search-icon:active {
+    font-size: 18px;
+}
+
+
+/* background-image: url(\src\assets\player-detail-images\3468697.jpg); */
+
+.box1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2.2rem;
+    position: relative;
+}
+
+.box1>* {
+    flex: 22%;
+    padding-bottom: 25px;
+    margin: 0.2rem;
+    background: transparent;
+    border-radius: 12px;
+}
+
+.content1 {
+    padding-bottom: 25px;
+    padding-top: 0.2rem;
+    width: fit-content;
+    margin: 0.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: #130f0ce7;
+    border-radius: 12px;
+}
+
+.img2 {
+    width: 18.6rem;
+    height: 17.6rem;
+    text-align: center;
+    margin: 10px;
+    display: block;
+    border-radius: 12px;
+}
+
+.sz {
+    font-size: 13px;
+    font-weight: 647;
+    color: #c5d3f0;
+}
+
+.star {
+    padding: 5px;
+    font-size: 25px;
+}
+
+span {
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+
+li {
+    padding-top: 5px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.checked-heart {
+    color: red;
+}
+
+.my-card {
+    width: min-content;
+}
+
+.btn {
+    text-align: center;
+}
+
+.ht {
+    height: fit-content;
+    margin-top: 65px;
+}
+
+td button {
+    border: none;
+}

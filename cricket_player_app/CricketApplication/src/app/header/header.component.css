@@ -1,0 +1,128 @@
+.s-bar {
+    border-radius: 15px;
+    margin: 5px 205px 5px 0;
+    border: none;
+    padding: 6px 10px 6px 19px;
+    width: 100%;
+}
+
+.copyright-text1 {
+    color: white;
+    margin-top: 315px;
+    margin-left: 22px;
+}
+
+.copyright-text2 {
+    color: white;
+    margin-top: 336px;
+    margin-left: 22px;
+}
+
+.bg-primary {
+    background-color: #000000!important;
+}
+
+.heart-btn {
+    background-color: rgba(35 88 20 / 99%)!important;
+    border: none;
+    color: #fff;
+}
+
+.s-bar:focus {
+    outline: none;
+}
+
+.search-icon {
+    font-size: 21px;
+    color: #000000;
+    background: transparent;
+    margin: -11px 0 0 -35px;
+}
+
+.search-icon:active {
+    font-size: 18px;
+}
+
+.logo1 {
+    position: absolute;
+    width: 5rem;
+    height: 3.5rem;
+    text-align: center;
+    margin: -9px 0px 0px 6px;
+    display: block;
+}
+
+.badge {
+    margin-left: -6px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 70px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.99)!important;
+    ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
